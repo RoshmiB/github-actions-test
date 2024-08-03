@@ -2,7 +2,8 @@ name: Shell Commands
 on: [push,fork]
 jobs:
     run-shell-command:
-      runs-on: actions_runner_dev
+      # runs-on: actions_runner_dev
+      runs-on: ubuntu-latest
       steps:
         - name: Echo a string
           run: echo "Hello all"
